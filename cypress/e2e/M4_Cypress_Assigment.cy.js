@@ -36,8 +36,8 @@ describe('elements exists on the tab and has the correct text',()=>{
         cy.get('#tab1 > form > .row > :nth-child(2) > .input-group > .label').should("have.text","check-out")
         cy.get(':nth-child(3) > .label').should("have.text","travellers")
         cy.get('#info').should("have.text","")
-        //cy.get('.checkbox-row > .m-r-45').should("have.text","Add a flight")
-        cy.get('#tab1 > form > .btn-submit').should("be.visible")
+        //cy.get('.checkbox-row > .m-r-45').should("have.string","Add a flight")
+        cy.get('#tab1 > form > .btn-submit').should("have.text","search")
     })
 
 })
